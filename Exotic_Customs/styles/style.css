@@ -1,0 +1,605 @@
+/*
+filename: style.css
+author: Edeser III Monserrate [102347754]
+created: 21/08/18
+last modified: 13/09/18
+description: Links to Index, Products, Enquiries & About sections of Exotic Customs
+*/
+
+/*-----------------------Universal Selectors----------------------------------*/
+body {
+  background: #333;
+  margin: 0;                      /* Text-Overflow prevents Overlapping*/
+  resize: both;                   /* Resize allows the page to be responsive*/
+  text-overflow: inherit;
+}
+
+footer{
+  background: #333;
+  padding: 1.5px;
+  color: White;
+  text-overflow: inherit;
+}
+
+footer p {display: inline-block;
+  width: 100%;}
+
+th{
+  column-span: all;
+  background-color: #8B0000; /*Dark Red*/
+}
+
+table, th, td{
+  border: 1px solid grey;
+  border-collapse: collapse;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-overflow: inherit;
+}
+
+fieldset{
+  border-color: #000000;
+  color: #D3D3D3;
+  padding-right: 2px;
+  text-overflow: inherit;
+  text-align: center;
+}
+
+h1{
+  font-size: 40px;
+  font-family: Arial;
+  resize: both;
+  text-overflow: inherit;
+}
+
+h2{
+  font-size: 25px;
+  font-family: Arial;
+  resize: both;
+  text-overflow: inherit;
+}
+
+h3{
+  font-size: 15px;
+  font-family: Helvetica;
+  padding-left: 5.5px;
+  resize: both;
+  text-overflow: inherit;
+}
+
+legend{
+  color: white;
+}
+
+dt{
+  font-size: 25px;
+}
+
+dd{
+  font-size: 15px;
+}
+
+a{                      /*Used for most hyperlinks*/
+  color: Green;
+}
+
+#products_h1{
+  font: bold 40px Arial;
+}
+
+.footer_enq_prod{
+  text-align: center;
+}
+/*----------------------------------------------------------------------------*/
+.container{             /* Contains the header, navbar & banner/content area */
+  margin: 0 auto;
+  background: #fff;
+  resize: both;
+  text-overflow: inherit;
+  display: block;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  background: #333;
+  resize: both;
+  text-overflow: inherit;
+}
+
+.company_logo{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  resize: both;
+}
+
+#logo {
+  float: left;
+  width: 200px;
+  height: 150px;
+  margin: 40px;
+  background: #ccc;
+  resize: both;
+}
+
+/*-----------------------------------NavBars----------------------------------*/
+#nav_bar{
+  clear: both;
+  resize: both;
+}
+
+#ul_nav{
+  border: 6px solid #555;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  resize: both;
+}
+
+.li_nav{
+    text-align: center;
+    display: inline-block;
+    border-right: 3px solid;
+    border-left: 3px solid;
+    resize: both;
+    overflow: hidden;         /*Prevents the links from covering each other*/
+}
+
+.li_nav a{                      /*---Cleans up the Nav Bar---*/
+  font-size: 1em;
+  padding: 6.1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  resize: both;
+}
+
+.li_nav:last-child{
+  border-bottom: none;
+}
+
+.li_nav a:hover:not(.active){   /*---Mouse Hover Effect---*/
+  background-color: #111;
+  resize: both;
+  overflow: auto;
+}
+
+/*--------------------------------Sidebar-------------------------------------*/
+
+#sidebar{
+  background-color: #666;
+  padding: 20.5px;
+  height: 635px;
+  width: 25%;
+  float: right;
+  resize: both;
+  border: 1px solid;
+}
+
+#sidebar_product{
+  background-color: #666;
+  padding: 20.5px;
+  height: 2030px;
+  width: 375px;
+  border: 1px solid;
+  float: right;
+  resize: both;
+}
+
+#sidebar_enq{
+  background-color: #666;
+  padding: 20.5px;
+  height: 795px;
+  width: 320px;
+  border: 1px solid;
+  float: right;
+  resize: both;
+}
+
+#sidebar_about{
+  background: #666;
+  height: 1220px;
+  padding: 20.5px;
+  width: 320px;
+  text-align: center;
+  float: right;
+  resize: both;
+  text-overflow: inherit;
+}
+
+#sidebar_enhancements{
+  background-color: #666;
+  padding: 20.5px;
+  height: 1243px;
+  width: 320px;
+  border: 1px solid;
+  float: right;
+  resize: both;
+}
+
+/*--------------Dividing Banner from Main Content & Header--------------------*/
+#banner{
+  background-color: #666;
+  height: 180px;
+  padding: 50px;
+  width: 93.1%;
+  border: 1px solid;
+  text-align: center;
+  clear: both;
+  resize: both;
+  text-overflow: inherit;
+}
+
+#banner_enhancements{
+  background-color: #666;   /*Dark Grey*/
+  padding: 15px;
+  height: 5px;
+  width: 97.1%;
+  border: 1px solid;
+  text-align: center;
+  clear: both;
+  resize: both;
+  text-overflow: inherit;
+}
+
+#banner_about{
+  background-color: #666;
+  height: 0px;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid;
+  text-align: center;
+  clear: both;
+  resize: both;
+  text-overflow: inherit;
+}
+/*---------------------------------------------------------------------------*/
+/*------------------------Ad Space CSS + Layouts-----------------------------*/
+.adspace{
+  text-align: center;
+  font-size: 70px;
+}
+
+.adspace_index{
+  float: right;
+  height: 296px;
+  width: 315px;
+  border: 1px solid black;
+  resize: both;
+  margin-top: 15px;
+}
+
+.options_enq{
+  float: right;
+  height: 276px;
+  width: 318px;
+  border: 2px solid black;
+  resize: both;
+  margin-top: 15px;
+  color: white;
+}
+
+.options_enq ul{
+  font-size: 20px;
+}
+
+.adspace_products{
+  float: right;
+  height: 486px;
+  width: 365px;
+  border: 1px solid black;
+  resize: both;
+  margin-top: 15px;
+}
+
+.adspace_about{
+  float: right;
+  height: 390px;
+  width: 315px;
+  border: 1px solid black;
+  resize: both;
+  margin-top: 15px;
+}
+
+.adspace_enhancements{
+  float: right;
+  height: 390px;
+  width: 315px;
+  border: 1px solid black;
+  resize: both;
+  margin-top: 15px;
+}
+
+/*---------------------------Containers for Images----------------------------*/
+
+.left_col{
+  float: left;
+  height: 277px;
+  width: 33%;
+  padding: 20px;
+  border: 1px solid #333;
+  background: #333;
+  color: #FFF;
+  resize: both;
+}
+
+.right_col{
+  float: left;
+  height: 277px;
+  width: 33%;
+  padding: 20px;
+  border: 1px solid #333;
+  background: #333;
+  color: #FFF;
+  resize: both;
+}
+
+.body_section{
+  height: 660px;
+  width: 100%;
+  text-align: center;
+  text-overflow: inherit;
+  resize: both;
+  background: #333;
+  text-overflow: inherit;
+}
+
+/*----------------------------Table Manipulations-----------------------------*/
+.table_info{
+  width: 70%;
+  background: #333;
+  color: Black;
+  resize: both;
+  text-overflow: inherit;
+}
+
+.tables{
+  background-color: #000000;    /*Black*/
+  color: white;                 /*White*/
+  font-family: Verdana;
+  resize: both;
+  text-overflow: inherit;
+}
+
+#table_enquiry{
+  resize: both;
+  color: white;
+  display: inline-table;
+}
+
+#timetable{
+  background-color: #000000;
+  display: inline-table;
+  color: white;
+  font-family: Verdana;
+  resize: both;
+  text-overflow: inherit;
+}
+
+.product_desc{
+  list-style-type: none;
+  font-size: 20px;
+  resize: both;
+  text-overflow: inherit;
+  font-family: Arial;
+}
+
+.assignment_req{
+  list-style-type: none;
+  resize: both;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.assignment_req a{
+  font-size: 20px;
+  padding: 0em;
+  color: Green;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  resize: both;
+}
+
+
+#assignment_nav{
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #333;
+  resize: both;
+}
+
+/*----------------------------------------------------------------------------*/
+#ul_index_desc{               /* Banner in the Index Page */
+  list-style-type: none;
+  resize: both;
+}
+
+#ul_index_desc p{
+  font-size: 20px;
+  font-family: Arial;
+}
+/*----------------------------------------------------------------------------*/
+/*Images in Index*/
+/* Set width to 100% so it can all fit within their div & containers*/
+#supra{
+  width: 100%;
+  resize: both;
+}
+
+#mustang_69{
+  width: 100%;
+  resize: both;
+}
+
+
+#gtr{
+  width: 100%;
+  height: 100%;
+  resize: both;
+}
+
+#viper{
+  width: 100%;
+  height: 100%;
+  resize: both;
+}
+/*----------------------------------------------------------------------------*/
+#customer_reviews{
+  font-family: Arial;
+  color: white;
+  background: #333;
+  resize: both;
+  font-size: 17px;
+}
+
+.table_image{       /* Table Images in Product Page */
+  width: 100%;
+  resize: both;
+}
+/*---------------------------About Section------------------------------------*/
+#h2_about{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.reflection{
+  font-size: 15px;
+  color: white;
+}
+
+.about_text h1{
+  color: white;
+  text-overflow: clip;
+}
+
+#student_id{
+  text-align: right;
+}
+/*------------------------------Header Image----------------------------------*/
+.content_area{
+  background-image:url("../images/header_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  resize: both;
+}
+
+#content_area_enquries{
+  background-image:url("../images/header_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  resize: both;
+}
+
+/*----------------------- Within the About Page ------------------------------*/
+.def_title{
+  font-size: 30px;
+  font-family: Helvetica;
+  resize: both;
+}
+
+#banner_about{
+  background: #666;
+  padding: 20px;
+  width: 97%;
+  border: 1px solid;
+  text-align: center;
+  clear: both;
+  resize: both;
+  text-overflow: inherit;
+}
+
+#personal_img{
+  border: 3px solid white;
+}
+/*-------------------------Responsive Code------------------------------------*/
+@media screen and (max-width: 800px) {   /* When Width is <800px, this will stack the contentin a column*/
+  img{
+    float: none;
+    width: 100%;
+  }
+
+  #li_nav, #li_nav a, #header {
+    float: none;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    clear: both;
+    text-align: center;
+  }
+
+  fieldset, .container, .content_area,
+  #body_section
+  {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+
+  #banner, #banner_about{
+  clear: both;
+  height: 100%;
+  width: 85%;
+  float: none;
+}
+
+  #body_section
+  {
+    width: 100%;
+    padding: 0;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1435px) {    /* When Width is <1425px, this will stack the content in a column */
+.right_col, .left_col
+  {
+    width: 70%;
+    height: 100%;
+    float: none;
+    position: static;
+  }
+
+.options_enq, .adspace_index, .tables, .table_info,
+  #sidebar_enq, #sidebar_desc, #sidebar, #customer_reviews
+  {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    float: none;
+  }
+
+  #li_nav, #li_nav a, #header 
+  {
+    float: none;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    clear: both;
+    text-align: center;
+  }
+
+}
+
+
+@media only screen and (min-width: 400px)
+{
+.content_area, #content_area_enquiries
+  {
+    background-image: url("../images/header_img.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+}
